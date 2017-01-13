@@ -2,7 +2,7 @@ During my 4th year in Computer Sciences at the University of Lyon, Titouan Chary
 
 ## Maven 
 To run the project, type the command: <br>
-mvn install 
+*mvn install *
 
 ## Spring 
 The project is working with the framework Spring. 
