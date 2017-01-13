@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Saloon</title>
+    <link type="text/css" rel="stylesheet" href="../../resources/css/style.css">
+
+</head>
+<body class="content" onload="onLoad()">
+<div >
+    <a href="index.html">Log out</a><br>
+    <h1 id="salonH1">Saloon :<spam id="saloon"></spam></h1>
+    <p id="chat"></p>
+</div>
+<div id="ajaxSendMessage" class="chatForm">
+    <div >
+        <label for="message">Type your message : </label>
+        <input type="text" id="message" name="message" />
+        <input type="hidden" name="salon" id="salon">
+        <input type="hidden" name="pseudo" id="pseudo" >
+        <input type="hidden" name="lastMessage" id="idLast" >
+        <input type="button" class="button" onclick="sendMessage()" value="Send"/>
+        <input type="button" class="button button-orange" onclick="updateMessage()" value="Update last sent"/>
+        <input type="button" class="button button-red" onclick="deleteMessage()" value="Delete last sent"/>
+
+    </div>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script type="application/javascript" src="../../resources/js/saloon.js"></script>
+</html>

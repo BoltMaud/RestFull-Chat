@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>My website</title>
+    <link type="text/css" rel="stylesheet" href="../../resources/css/style.css">
+</head>
+<body>
+<h1>Welcome to my Chat Application !</h1>
+
+<div id="connexionDiv" >
+    <h2>JSP - REST</h2>
+    <form method="POST" modelAttribute="username" action="../../user"  class="loginForm">
+        <label for="username" path="name">Sign in : </label>
+        <input type="text" path="name"
+                    id="username" name="username" />
+        <input type="submit" value="Validate JSP "/>
+    </form>
+    <br>
+    <hr color="silver"  style="width:350px;" />
+    <form method="POST" modelAttribute="loginForm" action="../../interface" class="loginForm" >
+        <label for="pseudo" path="pseudo">Type your pseudo : </label>
+        <input type="text" id="pseudo" name="pseudo" path="pseudo"/><br>
+        <label for="saloon" path="saloon">Saloon : </label><br>
+        <input type="text" path="saloon" id="saloon" name="saloon"/>
+        <input type="submit" value="Connection JSP"/>
+    </form>
+</div>
+<div id="ajaxDiv">
+    <h2>HTML - AJAX - REST</h2>
+    <label for="username" >Sign in : </label>
+    <input type="text"
+           id="usernameajax" name="username" />
+    <button class="button" onclick="valideUser()"> Validate AJAX</button>
+</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="application/javascript" src="../../resources/js/index.js"></script>
+</html>

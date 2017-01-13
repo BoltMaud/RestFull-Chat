@@ -1,0 +1,21 @@
+/login
+/logout
+/back-office
+/interface
+
+/user			POST
+/user/list		GET
+/user/{id}		GET
+/user/{id}		PATCH
+/user/{id}/saloons	GET
+/user/delete/{idUser}	DELETE XXX =====================
+
+/message
+/message/{salon]/{idMessage} Update/get/delete method
+
+/saloon				POST
+/saloon/list			GET
+/saloon/messages		GET
+/saloon/message 		POST
+/saloon/{salon}/messages/{index} GET
+/saloon/{idSaloon}		Delete ===========================
